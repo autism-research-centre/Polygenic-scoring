@@ -1,0 +1,3 @@
+# This is a file for generating pgs using LDPred.
+
+#python2.7 coord_genotypes.py --gf=LDpred_data_p1.000_test_0 --ssf=LDpred_data_p1.000_ss_0.txt --out traincheck7 --N=10000  
