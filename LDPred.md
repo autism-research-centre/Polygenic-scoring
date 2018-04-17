@@ -41,13 +41,18 @@ Next, prune the file in Plink
 
 ## Step 2: Creating the training dataset
 
-LDpred needs specific headers etc for the files to work. So let's try and generate that. 
+LDpred needs specific headers etc for the files to work. So let's try and generate that. In addition, it needs the columns to be in the exact order. We will use the "basic" format to generate this. 
 
-```R
+   hg19chrc    snpid    a1    a2    bp    or    p       
+    chr1    rs4951859    C    G    729679    0.97853    0.2083  
+    chr1    rs142557973    T    C    731718    1.01949    0.3298
 
-```
+Generate this in R, and save the file to the location where you have the target dataset. 
+
 
 # LD Pred command
+
+Run LD Pred in two steps. We will 
 
 ```bash
 python2.7 coord_genotypes.py --gf=LDpred_data_p1.000_test_0 --ssf=LDpred_data_p1.000_ss_0.txt --out traincheck7 --N=10000  
