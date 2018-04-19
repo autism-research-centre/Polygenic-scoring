@@ -2,7 +2,8 @@
 
 ## Step 1: Creating the target dataset
 
-We first need to prune the list of SNPs to make it a manageable amount for LDPred to function. 
+We first need to prune the list of SNPs to make it a manageable amount for LDPred to function. Ideally, less than 1 million but greater than 500K. 
+
 This is an example of what to do in the SSC dataset:
 
 For recoding file, see the the SSC liftover tutorial on how to generate the recoding file.
